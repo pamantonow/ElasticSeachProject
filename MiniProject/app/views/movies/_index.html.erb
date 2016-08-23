@@ -1,0 +1,9 @@
+<%if @movies.present? %>
+	<%@movies.each do |movie| %>
+	 	<p>movie.name</p>
+	 	<br>
+	 	<p>movie.description</p>
+	<% end %>
+<% else %> 
+	<p>Couldn't find that movie.</p>
+<% end %> 
