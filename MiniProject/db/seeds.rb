@@ -9,3 +9,4 @@
 Movie.create(name:"Frozen",description:"When their kingdom becomes trapped in perpetual winter, fearless Anna (Kristen Bell) joins forces with mountaineer Kristoff (Jonathan Groff) and his reindeer sidekick to find Anna's sister, Snow Queen Elsa (Idina Menzel), and break her icy spell.",genre: "fantasy")
 Movie.create(name:"Harry Potter",description: "Harry Potter is a series of fantasy novels written by British author J. K. Rowling",genre:"fantasy")
 Movie.create(name:"Twilight",description:"The Twilight Saga is a series of five romance fantasy films from Summit Entertainment based on the four novels by American author Stephenie Meyer",genre: "drama")
+
