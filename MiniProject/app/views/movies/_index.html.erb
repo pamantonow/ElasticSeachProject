@@ -11,6 +11,13 @@
 	</div>
 </nav>
 
+<%@movies.each do |movie| %>
+	<div id="movie">
+		<h3><%=movie.name%></h3>
+		<p>description: <%=movie.description%></p>
+		<br>
+	</div>
+<% end %> 
 
 
 
