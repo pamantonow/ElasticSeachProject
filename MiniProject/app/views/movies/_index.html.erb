@@ -1,9 +1,24 @@
-<%if @movies.present? %>
-	<%@movies.each do |movie| %>
-	 	<p>movie.name</p>
-	 	<br>
-	 	<p>movie.description</p>
-	<% end %>
-<% else %> 
-	<p>Couldn't find that movie.</p>
+
+<nav class="navbar navbar-default">
+	<div class="container">
+		<%=form_tag movies_path,class: 'navbar-form navbar-
+		left', role: 'search', method: :get do |f| %>
+			<div class="form-group">
+				<%=text_field_tag :q, params[:q] %>
+			</div>
+			<%=button_tag "Search", class: 'btn btn-default', name: nil %>
+	  <% end %> 
+	</div>
+</nav>
+
+<%@movies.each do |movie| %>
+	<div id="movie">
+		<h3><%=movie.name%></h3>
+		<p>description: <%=movie.description%></p>
+		<br>
+	</div>
 <% end %> 
+
+
+
+
